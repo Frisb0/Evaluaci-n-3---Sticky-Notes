@@ -1,0 +1,52 @@
+.note {
+    background-color: #fef08a; 
+    color: #222; 
+    padding: 15px;
+    margin: 15px; 
+    width: 220px; 
+    min-height: 200px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 1); 
+    position: relative; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between; 
+    word-wrap: break-word; 
+    overflow: hidden; 
+    transition: transform 0.2s ease-out; 
+}
+
+.note.important {
+    background-color: #f44336; 
+    color: white; 
+}
+
+.note h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    font-family: 'Reenie Beanie', cursive; 
+}
+
+.note p {
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 'Reenie Beanie', cursive;
+    margin-top: 30px;
+}
+
+.note-delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.6);
+    z-index: 10; 
+}
+
+.note-delete-button:hover {
+    color: red;
+}
